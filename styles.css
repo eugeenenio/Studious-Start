@@ -1,0 +1,192 @@
+
+/* Header Styles */
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+body {
+    font-family: 'Lexend Deca';
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(90,99,59);
+    text-align: center;
+}
+
+.paragraph{
+    color: rgb(123,130,96);
+}
+
+/* Main Container for Side-by-Side Layout */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Individual Boxes */
+.section {
+    flex: 1;
+    background-color: rgb(245,245,239);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Professor, Building, Crush, Video, and Network Input Styling */
+#prof-list, #building-list, #crush-list, #video-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.box-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.search-container {
+    margin-top: 30px;
+}
+
+#topic-input {
+    padding: 5px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.prof-button, .task-button, .building-button, .crush-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #453486;
+    border: none;   
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-button{
+    font-family: 'Lexend Deca';
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(245,245,239);
+    background-color: #4f6742;
+    border: none;   
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.prof-button:hover, .task-button:hover, .building-button:hover, .crush-button:hover, .video-button:hover {
+    background-color: #0056b3;
+}
+    
+.video-preview {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.video-preview a {
+    color: rgb(90,99,59);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-preview a:hover {
+    text-decoration: underline;
+}
+
+
+/* INPUT BOX STYLING */
+.task-input, .crush-input, .network-input, .topic-input {
+    margin-top: 20px;
+    display: flex;
+    gap: .10px;
+}
+
+.task-input input, .crush-input, .network-input, .topic-input {
+    padding: 10px;
+    font-family: 'Lexend Deca';
+    font-size: 100m;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Search */
+/* Box Styling */
+.box {
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+border: 2px solid #5d9766;
+border-radius: 10px;
+background-color: #f0f8f5;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+
+/* Title Styling */
+.box h1 {
+margin-bottom: 20px;
+color: #5d9766;
+font-size: 1.5em;
+}
+
+/* Search Input Styling */
+#search-input {
+width: calc(100% - 20px); /* Adjusting width to fit within padding */
+padding: 10px;
+font-size: 1em;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+/* Results List Styling */
+.results-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.results-list li {
+padding: 10px;
+background-color: #5d9766;
+color: white;
+margin: 5px 0;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.results-list li:hover {
+background-color: #4b7d53;
+}

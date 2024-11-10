@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Preparation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- RateMyProf Section -->
+        <div class="section" id="ratemyprof-section">
+            <h2>Prof Polls</h2>
+            <p>Select a professor to view their RateMyProf profile:</p>
+            <div id="prof-list">
+                <!-- JavaScript will populate this with professor links -->
+            </div>
+        </div>
+
+        <!-- Task Tally -->
+        <div class="section" id="task-section">
+            <h2>Task Tally</h2>
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Add a new task" />
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="task-list">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </div>
+
+        <!-- Class Compass -->
+        <div class="section" id="compass-section">
+            <h2>Class Compass</h2>
+            <input type="text" id="search-input" placeholder="Search for a building..." />
+            <ul id="results-list" class="results-list"></ul>
+        </div>
+
+        <!-- Campus Crush -->
+        <div class="section" id="campus-crush-section">
+            <h2>Campus Crush</h2>
+            <p>To write details about your campus crush!</p>
+            <div class="crush-input">
+                <input type="text" id="crush-input" placeholder="Add a detail" />
+                <button onclick="addCrushDetail()">Add Detail</button>
+            </div>
+            <ul id="crush-list">
+                <!-- Crush details will be displayed here -->
+            </ul>
+        </div>
+
+        <!-- Video Vault -->
+        <div class="section" id="video-vault">
+            <h2>Video Vault</h2>
+            <div class="video-group">
+                <button class="video-button" id="engg130-enph131">Engg130 | Enph131</button>
+                <button class="video-button" id="chem103-chem105">Chem103 | Chem105</button>
+                <button class="video-button" id="math100-math101">Math100 | Math101</button>
+            </div>
+
+            <div id="search-container" class="search-container" style="display: none;">
+                <h2 id="class-header"></h2>
+                <input type="text" id="topic-input" placeholder="Enter a topic..." />
+                <button onclick="searchVideos()">Search</button>
+                <div id="results"></div>
+            </div>
+        </div>
+
+        <!-- Network Nexus -->
+        <div class="section" id="network-nexus-section">
+            <h2>Network Nexus</h2>
+            <p>Search LinkedIn to expand your network:</p>
+            <div class="network-input">
+                <input type="text" id="network-search" placeholder="Enter search term" />
+                <button onclick="searchLinkedIn()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script links for each section -->
+    <script src="scripts/profPolls.js"></script>
+    <script src="scripts/taskTally.js"></script>
+    <script src="scripts/classCompass.js"></script>
+    <script src="scripts/campusCrush.js"></script>
+    <script src="scripts/videoVault.js"></script>
+    <script src="scripts/networkNexus.js"></script>
+    
+</body>
+</html>
