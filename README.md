@@ -25,3 +25,31 @@ Our team is composed of second year students and looking back on our first year 
 **CAMPUS CRUSH**
 - Note down individuals that catch your eye
 - Keep track of important details
+
+## How we built it
+- To conveniently view how our html, css, and js code displayed, we used CodePen
+- 
+
+## Challenges we ran into
+- We do want it to be both desktop and mobile friendly but with the time constraints, we mainly kept it mobile friendly 
+
+## Accomplishments that we're proud of
+- Self learned multiple software and coding practices through resources such as Youtube and Stack Overflow
+- Collaborated to exchange insights and troubleshoot technical challenges, drawing from personal experience and diverse perspectives to brainstorm effective, user-centered solutions
+- Developed an intelligent syllabus parsing feature using OpenAI's machine learning algorithm to streamline key content extraction in the Syllabus Simplifier
+- Designed an intuitive and easy to navigate UI, ensuring a smooth and easy experience for any student!
+
+## What we learned
+- We learned how effective planning and having systems is in developing a project
+
+## What's next for Studious Start
+- Creating an app for easier convenience
+- Creating a forum where the status of the washrooms can be updated by users
+
+## Connect with us!
+- Carlin Canlas: https://www.linkedin.com/in/carlin-c028/
+- Nathan Delara: https://www.linkedin.com/in/nathan-de-lara-0852802a7/
+- Andrea Eugenio: https://www.linkedin.com/in/aneugenio/
+- Julian Santos: https://www.linkedin.com/in/ubcjuju/
+- Glenice Sapgnad: https://www.linkedin.com/in/glenice-sapngad-b324b4318/
+😚
