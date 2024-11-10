@@ -27,8 +27,9 @@ Our team is composed of second year students and looking back on our first year 
 - Keep track of important details
 
 ## How we built it
-- To conveniently view how our html, css, and js code displayed, we used CodePen
-- 
+- To conveniently view how our html, css, and js code displayed, we used CodePen 
+- We combined our own resources with existing resources 
+- We used openAI API to parse through the syllabus text and extract it to a Google Sheet
 
 ## Challenges we ran into
 - We do want it to be both desktop and mobile friendly but with the time constraints, we mainly kept it mobile friendly 
@@ -41,6 +42,11 @@ Our team is composed of second year students and looking back on our first year 
 
 ## What we learned
 - We learned how effective planning and having systems is in developing a project
+- How to integrate and work with APIs to expand our app’s capabilities
+- Learned how to create automated workflows through Zapier, enabling effective synchronization between APIs
+- How to self learn unfamiliar programs and coding languages (e.g. HTML, JavaScript, CSS)
+- The difference between front end development and backend development
+- We learned that we enjoy web development! 
 
 ## What's next for Studious Start
 - Creating an app for easier convenience
@@ -52,4 +58,4 @@ Our team is composed of second year students and looking back on our first year 
 - Andrea Eugenio: https://www.linkedin.com/in/aneugenio/
 - Julian Santos: https://www.linkedin.com/in/ubcjuju/
 - Glenice Sapgnad: https://www.linkedin.com/in/glenice-sapngad-b324b4318/
-😚
+
