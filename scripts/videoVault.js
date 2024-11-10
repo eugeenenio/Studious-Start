@@ -1,3 +1,4 @@
+// YouTube Channel Links
 const youtubeLinks = {
     'engg130-enph131': [
         { name: 'Questions Solutions', url: 'https://www.youtube.com/@QuestionSolutions' },
@@ -8,34 +9,18 @@ const youtubeLinks = {
         { name: 'Chad’s Prep', url: 'https://www.youtube.com/@ChadsPrep' }
     ],
     'math100-math101': [
-        { name: 'Professor Leonard', url: 'https://www.youtube.com/@ProfessorLeonard' },
-        { name: 'Khan Academy', url: 'https://www.youtube.com/@khanacademy' }
+        { name: 'Organic Chemistry Tutor', url: 'https://www.youtube.com/@TheOrganicChemistryTutor' },
+        { name: 'Professor Leonard', url: 'https://www.youtube.com/@ProfessorLeonard' }
     ]
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM fully loaded. Adding event listeners...");
+// Handle button click
+document.getElementById('engg130-enph131').addEventListener('click', () => setClass('engg130-enph131'));
+document.getElementById('chem103-chem105').addEventListener('click', () => setClass('chem103-chem105'));
+document.getElementById('math100-math101').addEventListener('click', () => setClass('math100-math101'));
 
-    // Adding event listeners to buttons after DOM is ready
-    document.getElementById('engg130-enph131').addEventListener('click', () => {
-        console.log('Engg130 | Enph131 button clicked');
-        setClass('engg130-enph131');
-    });
-
-    document.getElementById('chem103-chem105').addEventListener('click', () => {
-        console.log('Chem103 | Chem105 button clicked');
-        setClass('chem103-chem105');
-    });
-
-    document.getElementById('math100-math101').addEventListener('click', () => {
-        console.log('Math100 | Math101 button clicked');
-        setClass('math100-math101');
-    });
-});
-
-// Set the class for the video search
+// Function to display the correct search interface
 function setClass(classId) {
-    console.log(`Setting class: ${classId}`);
     document.getElementById('search-container').style.display = 'block';
     const className = document.getElementById(classId).innerText;
     document.getElementById('class-header').innerText = className;
@@ -52,7 +37,7 @@ function setClass(classId) {
     });
 }
 
-// Search function
+// Search videos based on the topic
 function searchVideos() {
     const topic = document.getElementById('topic-input').value.trim();
     const { channels } = window.currentClass;
