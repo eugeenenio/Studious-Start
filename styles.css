@@ -1,165 +1,89 @@
-/* Header Styles */
-
-    .container {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
-    }
-
+/* General Body */
     body {
         font-family: 'Lexend Deca';
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         min-height: 100vh;
         background-color: rgb(90,99,59);
         text-align: center;
+        margin: 0;
     }
 
-    .paragraph{
-        color: rgb(123,130,96);
+/* Logo */
+    .logo {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
     }
 
-/* Main Container for Side-by-Side Layout */
-
-/* Individual Boxes */
-    .section {
-        flex: 1;
-        background-color: rgb(245,245,239);
-        border-radius:10px;
-        padding: 10px;
-        text-align: center;
+    @media screen and (max-width: 600px) {
+        .logo {
+            width: 80%;
+            max-width: 200px;
+        }
     }
 
-/* Professor, Building, Crush, Video, and Network Input Styling */
-    #prof-list, #building-list, #crush-list, #video-list{
-        margin-top: 20px;
+/* Main Container */
+    .main-container {
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
-        gap: 10px;
-    }
-
-    .box-container {
-        width: 80%;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: white;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-    }
-
-    .search-container {
-        margin-top: 30px;
-    }
-
-    #topic-input {
-        padding: 5px;
-        width: 300px;
-        margin-right: 10px;
-        border-radius: 5px;
-    }
-
-    #results {
-        margin-top: 20px;
-    }
-
-/* Button Styling */
-    .prof-button, .task-button, .building-button, .crush-button {
-        padding: 10px 20px;
-        font-size: 1em;
-        color: white;
-        background-color: #453486;
-        border: none;   
-        border-radius: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .video-button{
-        font-family: 'Lexend Deca';
-        padding: 10px 20px;
-        font-size: 1em;
-        color: rgb(245,245,239);
-        background-color: #4f6742;
-        border: none;   
-        border-radius: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin: 5px;
-    }
-
-    .prof-button:hover, .task-button:hover, .building-button:hover, .crush-button:hover, .video-button:hover {
-        background-color: #0056b3;
-    }
-        
-    .video-preview {
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #e7e7e7;
-        border-radius: 5px;
-    }
-
-    .video-preview a {
-        color: rgb(90,99,59);
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .video-preview a:hover {
-        text-decoration: underline;
-    }
-
-
-/* INPUT BOX STYLING */
-    .task-input, .crush-input, .network-input, .topic-input {
-        margin-top: 20px;
-        display: flex;
-        gap: .10px;
-    }
-
-    .task-input input, .crush-input, .network-input, .topic-input {
-        padding: 10px;
-        font-family: 'Lexend Deca';
-        font-size: 100m;
-        width: 300px;
-        height: 50px;
-        border-radius: 5px;
-    }
-
-/* Search */
-/* Box Styling */
-    .box {
-        max-width: 400px;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
-        border: 2px solid #5d9766;
+    }
+
+/* Section Styling */
+    .section {
+        width: 100%;
+        max-width: 400px;
+        background-color: rgb(245,245,239);
         border-radius: 10px;
-        background-color: #f0f8f5;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
         text-align: center;
+        margin: 10px 0;
     }
 
-/* Title Styling */
-    .box h1 {
-        margin-bottom: 20px;
-        color: #5d9766;
-        font-size: 1.5em;
-    }
-
-/* Search Input Styling */
-    #search-input {
-        width: calc(100% - 20px); /* Adjusting width to fit within padding */
+/* Task Inputs (Group all inputs together) */
+    .input-field {
         padding: 10px;
+        font-family: 'Lexend Deca';
         font-size: 1em;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
         border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
         box-sizing: border-box;
+    }
+
+    .input-field:focus {
+        outline: none;
+        border-color: #4f6742;
+    }
+
+/* Buttons */
+    button {
+        font-family: 'Lexend Deca';
+        padding: 10px 20px;
+        font-size: 1em;
+        color: rgb(255, 252, 243);
+        background-color: #4f6742;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    button:hover {
+        background-color: #575537;
     }
 
 /* Results List Styling */
@@ -181,4 +105,124 @@
 
     .results-list li:hover {
         background-color: #4b7d53;
+    }
+
+/* Inputs and Buttons for Forms */
+    #profSearchForm, .crush-input, .network-input, .search-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Special styling for Search section */
+    #search-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    #topic-input {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+/* Section for Video Buttons */
+    .video-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .video-button {
+        font-family: 'Lexend Deca';
+        padding: 10px 20px;
+        font-size: 1em;
+        color: rgb(245,245,239);
+        background-color: #4f6742;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+    }
+
+    .video-button:hover {
+        background-color: #575537;
+    }
+
+/* Video Preview */
+    .video-preview {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #e7e7e7;
+        border-radius: 5px;
+    }
+
+    .video-preview a {
+        color: rgb(90,99,59);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .video-preview a:hover {
+        text-decoration: underline;
+    }
+
+/* Syllabus Simplifier Section */
+    #syllabus-section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(245,245,239);
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+/* Responsive Styles for Syllabus Simplifier Section */
+@media screen and (max-width: 600px) {
+    #syllabus-section {
+        padding: 15px;
+    }
+
+    #syllabus-section button {
+        width: 100%;
+        max-width: 250px;
+        font-size: 0.9em;
+    }
+
+    #syllabus-section h2 {
+        font-size: 1.5em;
+    }
+
+    #syllabus-section p {
+        font-size: 1em;
+    }
+}
+
+/* Box-Sizing for All Elements */
+    * {
+        box-sizing: border-box;
+    }
+
+/* Small Screen Adjustment */
+    @media screen and (max-width: 600px) {
+        .main-container {
+            padding: 10px;
+        }
+
+        .section {
+            max-width: 100%;
+            padding: 15px;
+        }
     }

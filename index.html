@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Preparation App</title>
+    <title>Studious START</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="studiousSTART.png" type="image/png">
 </head>
-<body>
-    <div class="main-container">
 
-    <!-- RateMyProf Section -->
-        <div class="section" id="prof-section">
-            <h1>Prof Poll</h1>
-            <form id="profSearchForm">
-                <input type="text" id="profName" placeholder="Search for a professor..." required>
-                <button type="submit">Search</button>
-            </form>
-        </div>
-        </div>
+<body>
+
+    <img class ="logo" src = "https://media.discordapp.net/attachments/1304843604367245342/1305037121291157504/2FFC3620-1D25-446C-9279-CC23A15AF7C0.png?ex=67319208&is=67304088&hm=90713ff1ca3d2fe41996d15764e6b6d33f847e70a5196c06f2f78e7acf18fb68&=&format=webp&quality=lossless&width=993&height=993">
+
+    <div class="main-container">
 
     <!-- Class Compass -->
         <div class="section" id="compass-section">
-            <h2>Class Compass</h2>
-            <input type="text" id="search-input" placeholder="Search for a building..." />
+            <h1>Class Compass</h1>
+            <p>Find directions to buildings from your location:</p>
+            <input type="text" class="input-field" id="search-input" placeholder="Search for a building..." />
             <ul id="results-list" class="results-list"></ul>
         </div>
 
-    <!-- Campus Crush -->
-        <div class="section" id="campus-crush-section">
-            <h2>Campus Crush</h2>
-            <p>To write details about your campus crush!</p>
-            <div class="crush-input">
-                <input type="text" id="crush-input" placeholder="Add a detail" />
-                <button onclick="addCrushDetail()">Add Detail</button>
-            </div>
-            <ul id="crush-list">
-                <!-- Crush details will be displayed here -->
-            </ul>
-        </div>
-
     <!-- Video Vault -->
-        <div class="section" id="video-vault">
-            <h2>Video Vault</h2>
+        <div class="section" id="video-section">
+            <h1>Video Vault</h1>
+            <p></p>
+            
             <div class="video-group">
                 <button class="video-button" id="engg130-enph131">Engg130 | Enph131</button>
                 <button class="video-button" id="chem103-chem105">Chem103 | Chem105</button>
@@ -51,41 +36,63 @@
 
             <div id="search-container" class="search-container" style="display: none;">
                 <h2 id="class-header"></h2>
-                <input type="text" id="topic-input" placeholder="Enter a topic..." />
+                <input type="text" class="input-field" id="topic-input" placeholder="Enter a topic..." />
                 <button onclick="searchVideos()">Search</button>
                 <div id="results"></div>
             </div>
         </div>
 
-    <!-- Network Nexus -->
-        <div class="section" id="network-nexus-section">
-            <h2>Network Nexus</h2>
-            <p>Search LinkedIn to expand your network:</p>
-            <div class="network-input">
-                <input type="text" id="network-search" placeholder="Enter search term" />
-                <button onclick="searchLinkedIn()">Search</button>
-            </div>
-        </div>
-    </div>
-    
     <!-- Syllabus Simplifier Section -->
-        <div class="section" id="syllabus-simplifier-section">
-            <h2>Syllabus Simplifier</h2>
+        <div class="section" id="syllabus-section">
+            <h1>Syllabus Simplifier</h1>
             <p>Upload your syllabus PDF using our Google Form:</p>
 
-            <!-- Button to open the Google Form for PDF uploads -->
+            <!-- Redirects to Google Form for PDF upload -->
             <button onclick="openGoogleForm()" class="form-link">Upload Syllabus PDF</button>
 
-            <!-- Additional text for the Simplified Syllabus button -->
             <p style="margin-top: 15px;">Find your simplified syllabus in this Google Sheet after uploading!</p>
 
-            <!-- Button to open the Google Sheets document -->
+            <!-- Redirects to simplified syllabus -->
             <button onclick="openGoogleSheet()" class="form-link">Simplified Syllabus</button>
         </div>
 
-</div>
+    <!-- RateMyProf Section -->
+        <div class="section" id="prof-section">
+            <h1>Prof Poll</h1>
+            <p>Search up your professors ratings...</p>
+            <form id="profSearchForm">
+                <input type="text" class="input-field" id="profName" placeholder="Search for a professor..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
 
-<!-- Script links for each section -->
+    <!-- Network Nexus -->
+        <div class="section" id="network-section">
+            <h1>Network Nexus</h1>
+            <p>Search LinkedIn to expand your network:</p>
+            <div class="network-input">
+                <input type="text" class="input-field" id="network-search" placeholder="Enter search term" />
+                <button onclick="searchLinkedIn()">Search</button>
+            </div>
+        </div>
+
+    <!-- Campus Crush -->
+        <div class="section" id="campus-section">
+            <h1>Campus Crush</h1>
+            <p>To write details about your campus crush ;)</p>
+
+            <div class="crush-input">
+                <input type="text" class="input-field" id="crush-input" placeholder="Add a detail" />
+                <button onclick="addCrushDetail()">Add Detail</button>
+            </div>
+
+            <ul id="crush-list">
+                <!-- Crush details will be displayed here -->
+            </ul>
+
+        </div>
+
+    <!-- Script links for each section -->
     <script src="scripts/profPolls.js"></script>
     <script src="scripts/classCompass.js"></script>
     <script src="scripts/campusCrush.js"></script>
@@ -94,4 +101,5 @@
     <script src="scripts/syllabusSimplifier.js"></script>
 
 </body>
+
 </html>
