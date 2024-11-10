@@ -1,21 +1,19 @@
-// profPolls.js
+const form = document.getElementById("profSearchForm");
 
-const professors = [
-    { name: "Professor Smith", url: "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=123456" },
-    { name: "Professor Johnson", url: "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=654321" },
-    { name: "Professor Lee", url: "https://www.ratemyprofessors.com/ShowRatings.jsp?tid=789123" }
-];
+// Add event listener for form submission
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent default form submission
 
-function populateProfList() {
-    const profListDiv = document.getElementById("prof-list");
+    // Get the professor name input
+    const profName = document.getElementById("profName").value.trim();
 
-    professors.forEach(prof => {
-        const button = document.createElement("button");
-        button.className = "prof-button";
-        button.textContent = prof.name;
-        button.onclick = () => window.open(prof.url, "_blank");
-        profListDiv.appendChild(button);
-    });
-}
+    // If the input is not empty, perform the search
+    if (profName) {
+        // Construct the search URL for RateMyProfessors
+        const searchQuery = encodeURIComponent(profName);
+        const searchURL = `https://www.ratemyprofessors.com/search/professors/1407?q=${searchQuery}`;
 
-populateProfList();
+        // Open the RateMyProfessors search results in a new tab
+        window.open(searchURL, '_blank');
+    }
+});

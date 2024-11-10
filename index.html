@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,25 @@
 </head>
 <body>
     <div class="main-container">
-        <!-- RateMyProf Section -->
-        <div class="section" id="ratemyprof-section">
-            <h2>Prof Polls</h2>
-            <p>Select a professor to view their RateMyProf profile:</p>
-            <div id="prof-list">
-                <!-- JavaScript will populate this with professor links -->
-            </div>
+
+    <!-- RateMyProf Section -->
+        <div class="section" id="prof-section">
+            <h1>Prof Poll</h1>
+            <form id="profSearchForm">
+                <input type="text" id="profName" placeholder="Search for a professor..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
         </div>
 
-        <!-- Task Tally -->
-        <div class="section" id="task-section">
-            <h2>Task Tally</h2>
-            <div class="task-input">
-                <input type="text" id="task-input" placeholder="Add a new task" />
-                <button onclick="addTask()">Add Task</button>
-            </div>
-            <ul id="task-list">
-                <!-- Tasks will be displayed here -->
-            </ul>
-        </div>
-
-        <!-- Class Compass -->
+    <!-- Class Compass -->
         <div class="section" id="compass-section">
             <h2>Class Compass</h2>
             <input type="text" id="search-input" placeholder="Search for a building..." />
             <ul id="results-list" class="results-list"></ul>
         </div>
 
-        <!-- Campus Crush -->
+    <!-- Campus Crush -->
         <div class="section" id="campus-crush-section">
             <h2>Campus Crush</h2>
             <p>To write details about your campus crush!</p>
@@ -49,7 +40,7 @@
             </ul>
         </div>
 
-        <!-- Video Vault -->
+    <!-- Video Vault -->
         <div class="section" id="video-vault">
             <h2>Video Vault</h2>
             <div class="video-group">
@@ -66,7 +57,7 @@
             </div>
         </div>
 
-        <!-- Network Nexus -->
+    <!-- Network Nexus -->
         <div class="section" id="network-nexus-section">
             <h2>Network Nexus</h2>
             <p>Search LinkedIn to expand your network:</p>
@@ -76,14 +67,31 @@
             </div>
         </div>
     </div>
+    
+    <!-- Syllabus Simplifier Section -->
+        <div class="section" id="syllabus-simplifier-section">
+            <h2>Syllabus Simplifier</h2>
+            <p>Upload your syllabus PDF using our Google Form:</p>
 
-    <!-- Script links for each section -->
+            <!-- Button to open the Google Form for PDF uploads -->
+            <button onclick="openGoogleForm()" class="form-link">Upload Syllabus PDF</button>
+
+            <!-- Additional text for the Simplified Syllabus button -->
+            <p style="margin-top: 15px;">Find your simplified syllabus in this Google Sheet after uploading!</p>
+
+            <!-- Button to open the Google Sheets document -->
+            <button onclick="openGoogleSheet()" class="form-link">Simplified Syllabus</button>
+        </div>
+
+</div>
+
+<!-- Script links for each section -->
     <script src="scripts/profPolls.js"></script>
-    <script src="scripts/taskTally.js"></script>
     <script src="scripts/classCompass.js"></script>
     <script src="scripts/campusCrush.js"></script>
     <script src="scripts/videoVault.js"></script>
     <script src="scripts/networkNexus.js"></script>
-    
+    <script src="scripts/syllabusSimplifier.js"></script>
+
 </body>
 </html>
