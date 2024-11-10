@@ -50,7 +50,7 @@ body {
 /* Task Inputs (Group all inputs together) */
 .input-field {
     padding: 11px; /* Increased from 10px */
-    font-family: ''Lexend Deca', Arial, sans-serif';
+    font-family: 'Lexend Deca', Arial, sans-serif;
     font-size: 1.1em; /* Increased from 1em */
     width: 100%;
     max-width: 330px; /* Increased from 300px */
@@ -69,7 +69,7 @@ body {
 /* Buttons */
 button {
     display: inline-block;
-    font-family: ''Lexend Deca', Arial, sans-serif';
+    font-family: 'Lexend Deca', Arial, sans-serif;
     padding: 11px 22px; /* Increased from 10px 20px */
     font-size: 1.1em; /* Increased from 1em */
     color: rgb(255, 252, 243);
