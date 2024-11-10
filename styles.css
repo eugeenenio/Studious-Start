@@ -23,7 +23,29 @@
             width: 88%; 
             max-width: 220px; 
         }
+        #syllabus-section {
+            padding: 16.5px; 
+        }
+        #syllabus-section button {
+            width: 100%;
+            max-width: 275px; 
+            font-size: 1em; 
+        }
+        #syllabus-section h2 {
+            font-size: 1.65em;
+        }
+        #syllabus-section p {
+            font-size: 1.1em;
+        }
+        .main-container {
+            padding: 11px; 
+        }
+        .section {
+            max-width: 100%;
+            padding: 16.5px; 
+        }
     }
+    
 
 /* Main Container */
     .main-container {
@@ -216,16 +238,4 @@
 /* Box-Sizing for All Elements */
     * {
         box-sizing: border-box;
-    }
-
-/* Small Screen Adjustment */
-    @media screen and (max-width: 600px) {
-        .main-container {
-            padding: 11px; 
-        }
-
-        .section {
-            max-width: 100%;
-            padding: 16.5px; 
-        }
     }
