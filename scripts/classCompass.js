@@ -1,4 +1,4 @@
-// Array of buildings with Google Maps links (Alphabetical Order)
+// Buildings
 const buildings = [
     { name: "CAB", url: "https://maps.app.goo.gl/3QWN4DjfCfeRhK7MA" },
     { name: "CCIS", url: "https://maps.app.goo.gl/cwFzokRLHXNzbY838" },
@@ -34,7 +34,7 @@ function searchBuildings() {
         building.name.toLowerCase().includes(input)
     );
 
-    // Display matching results
+    // Results
     if (filteredBuildings.length > 0) {
         resultsList.style.display = "block"; // Show results list
         filteredBuildings.forEach(building => {

@@ -1,5 +1,3 @@
-// networkNexus.js
-
 function searchLinkedIn() {
     const searchTerm = document.getElementById("network-search").value.trim();
     if (searchTerm) {
