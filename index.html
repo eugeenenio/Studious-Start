@@ -7,6 +7,8 @@
     <title>Studious START</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="studiousSTART.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,6 +24,21 @@
             <input type="text" class="input-field" id="search-input" placeholder="Search for a building..." />
             <ul id="results-list" class="results-list"></ul>
         </div>
+    
+    <!-- Syllabus Simplifier Section -->
+        <div class="section" id="syllabus-section">
+            <h1>Syllabus Simplifier</h1>
+            <p>Upload your syllabus PDF using our Google Form:</p>
+
+            <!-- Redirects to Google Form for PDF upload -->
+            <button onclick="openGoogleForm()" class="form-link">Upload Syllabus PDF</button>
+
+            <p style="margin-top: 15px;">Find your simplified syllabus in this Google Sheet after uploading!</p>
+
+            <!-- Redirects to simplified syllabus -->
+            <button onclick="openGoogleSheet()" class="form-link">Simplified Syllabus</button>
+        </div>
+
 
     <!-- Video Vault -->
         <div class="section" id="video-section">
@@ -40,20 +57,6 @@
                 <button onclick="searchVideos()">Search</button>
                 <div id="results"></div>
             </div>
-        </div>
-
-    <!-- Syllabus Simplifier Section -->
-        <div class="section" id="syllabus-section">
-            <h1>Syllabus Simplifier</h1>
-            <p>Upload your syllabus PDF using our Google Form:</p>
-
-            <!-- Redirects to Google Form for PDF upload -->
-            <button onclick="openGoogleForm()" class="form-link">Upload Syllabus PDF</button>
-
-            <p style="margin-top: 15px;">Find your simplified syllabus in this Google Sheet after uploading!</p>
-
-            <!-- Redirects to simplified syllabus -->
-            <button onclick="openGoogleSheet()" class="form-link">Simplified Syllabus</button>
         </div>
 
     <!-- RateMyProf Section -->
@@ -75,19 +78,26 @@
                 <button onclick="searchLinkedIn()">Search</button>
             </div>
         </div>
+    
+    <!-- Washroom Wayfinder-->
+        <div class="section" id="washroom-section">
+            <h1 id="title">Washroom Wayfinder</h1>
+            <p>Your guide for finding your porcelain throne.</p>
+            <button onclick="openWashroomGuide()" class="button">Guide</button>
+        </div>
 
     <!-- Campus Crush -->
         <div class="section" id="campus-section">
             <h1>Campus Crush</h1>
             <p>To write details about your campus crush ;)</p>
-
+        
             <div class="crush-input">
                 <input type="text" class="input-field" id="crush-input" placeholder="Add a detail" />
                 <button onclick="addCrushDetail()">Add Detail</button>
             </div>
-
+        
             <ul id="crush-list">
-                <!-- Crush details will be displayed here -->
+                <!-- Crush details will be displayed here, with each delete button having the class "delete-button" -->
             </ul>
 
         </div>
@@ -99,6 +109,7 @@
     <script src="scripts/videoVault.js"></script>
     <script src="scripts/networkNexus.js"></script>
     <script src="scripts/syllabusSimplifier.js"></script>
+    <script src="scripts/washroomWayfinder.js"></script>
 
 </body>
 
